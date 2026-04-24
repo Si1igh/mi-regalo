@@ -27,6 +27,7 @@ let elementos;
 window.addEventListener("load", () => {
   elementos = document.querySelectorAll(".oculto");
   mostrarElementos();
+   crearParticulas();
 });
 
 function mostrarElementos() {
@@ -77,6 +78,5 @@ function crearParticulas() {
   }
 }
 
-// repetir constantemente
-crearParticulas();
+
 window.addEventListener("load", mostrarElementos);
