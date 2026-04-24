@@ -1,10 +1,13 @@
 function mostrarMensaje() {
   const mensaje = document.getElementById("mensaje");
+  const musica = document.getElementById("musica");
 
   mensaje.innerText = "Te amo mucho mamá 💖";
   mensaje.style.opacity = "1";
 
-  crearCorazones(); // 💕 AQUÍ
+  crearCorazones();
+
+  musica.play(); // 🎵 AQUÍ
 
   setTimeout(() => {
     document.getElementById("carta").scrollIntoView({
