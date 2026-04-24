@@ -4,13 +4,14 @@ function mostrarMensaje() {
   mensaje.innerText = "Te amo mucho mamá 💖";
   mensaje.style.opacity = "1";
 
+  crearCorazones(); // 💕 AQUÍ
+
   setTimeout(() => {
     document.getElementById("carta").scrollIntoView({
       behavior: "smooth"
     });
   }, 1500);
 }
-
 function scrollToSection() {
   document.getElementById("historia").scrollIntoView({
     behavior: "smooth"
