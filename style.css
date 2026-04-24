@@ -3,7 +3,20 @@ body {
   text-align: center;
   background-color: #fff0f5;
 }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+}
 
+h1, h2 {
+  color: #d63384;
+}
+
+button {
+  background-color: #ff69b4;
+  color: white;
+  cursor: pointer;
+}
 section {
   padding: 50px;
 }
