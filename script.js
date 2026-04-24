@@ -1,6 +1,7 @@
 function mostrarMensaje() {
   const mensaje = document.getElementById("mensaje");
   const musica = document.getElementById("musica");
+  const carta = document.getElementById("carta");
 
   mensaje.innerText = "Te amo mucho mamá 💖";
   mensaje.style.opacity = "1";
@@ -12,7 +13,8 @@ function mostrarMensaje() {
   }
 
   setTimeout(() => {
-    document.getElementById("carta").scrollIntoView({
+    carta.classList.add("visible"); // 👈 LA CLAVE
+    carta.scrollIntoView({
       behavior: "smooth"
     });
   }, 1500);
