@@ -53,12 +53,14 @@ button:hover {
 
 /* Carta más especial */
 .carta {
-  opacity: 0;
+  .carta {
+  /* quita opacity de aquí */
   transform: translateY(40px);
   transition: all 1.5s ease;
   max-width: 700px;
   margin: auto;
   line-height: 1.6;
+}
 }
 
 /* Imágenes más bonitas */
