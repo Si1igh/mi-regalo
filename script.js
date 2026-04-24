@@ -44,6 +44,10 @@ function mostrarElementos() {
   const alturaPantalla = window.innerHeight;
 
   elementos.forEach(el => {
+
+    // 🚫 evitar que la carta aparezca sola
+    if (el.id === "carta") return;
+
     const distancia = el.getBoundingClientRect().top;
 
     if (distancia < alturaPantalla - 100) {
