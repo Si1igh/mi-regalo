@@ -13,7 +13,8 @@ function mostrarMensaje() {
   }
 
   setTimeout(() => {
-    carta.classList.add("visible"); // 👈 LA CLAVE
+    carta.classList.remove("oculto"); // 👈 CLAVE
+    carta.classList.add("visible");   // 👈 CLAVE
     carta.scrollIntoView({
       behavior: "smooth"
     });
